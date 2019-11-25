@@ -14,5 +14,10 @@
     <module>mall</module>
   </modules>
 
-
+  <parent>
+    <artifactId>spring-boot-starter-parent</artifactId>
+    <groupId>org.springframework.boot</groupId>
+    <relativePath/>
+    <version>2.1.7.RELEASE</version> <!-- lookup2. parent from repository -->
+  </parent>
 </project>

@@ -11,5 +11,10 @@
 
   <artifactId>mall-common</artifactId>
 
-
+  <dependencies>
+    <dependency>
+      <artifactId>spring-boot-starter</artifactId>
+      <groupId>org.springframework.boot</groupId>
+    </dependency>
+  </dependencies>
 </project>
