@@ -28,6 +28,10 @@ package
   - `mall-common` 公共部分
   - `mall-admin` 管理后台
   - `mall` 服务
+  
+DDD与CQRS https://www.jianshu.com/p/Tozpp3
+
+在DDD架构中，通常会将查询和命令操作分开
 
 
 
