@@ -1,11 +1,10 @@
 # 公共部分
-- 领域模型
-  - 部分领域模型
-- 数据模型
-  - 全部的数据模型
-- 仓储服务
-  - 公共的仓储服务
-  - 工具类
 
-
+- `domain` 领域
+  - `model` 领域模型的公共部分
+  - `repository` 仓储(SPI方式)
+  - `service` 领域服务的公共部分
+- `infrastructure` 基础设施
+  - `repository` 仓储的实现
+- `util` 工具类
 
