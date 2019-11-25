@@ -5,6 +5,7 @@ import org.springframework.stereotype.Repository;
 
 /**
  * JDBC仓储实现
+ *
  * @author kaizi2009
  */
 @Repository

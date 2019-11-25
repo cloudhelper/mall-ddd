@@ -5,6 +5,7 @@ import org.springframework.stereotype.Repository;
 
 /**
  * 仓储实现
+ *
  * @author kaizi2009
  */
 @Repository("xxlRepository")
