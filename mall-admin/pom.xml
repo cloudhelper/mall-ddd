@@ -7,6 +7,7 @@
     <dependency>
       <artifactId>spring-boot-starter-web</artifactId>
       <groupId>org.springframework.boot</groupId>
+      <version>${spring.boot.version}</version>
     </dependency>
   </dependencies>
 
