@@ -25,6 +25,17 @@ public class EventContext implements ApplicationContextAware {
         return eventHandlerMap.get(eventSourceType);
     }
 
+    public static void publishEvent(EventSource eventSource) {
+        Class eventSourceType = eventSource.getClass();
+        List<EventHandler> eventHandlers = getEventHandlers(eventSourceType);
+        if (eventHandlers == null) {
+            return;
+        }
+        eventHandlers.forEach(eventHandler -> {
+            eventHandler.handle(new EventObject(eventSource));
+        });
+    }
+
     @Override
     public void setApplicationContext(ApplicationContext applicationContext) throws BeansException {
         context = applicationContext;
