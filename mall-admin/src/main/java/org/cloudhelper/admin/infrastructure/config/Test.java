@@ -15,17 +15,18 @@ import org.springframework.core.type.filter.AnnotationTypeFilter;
  */
 @Configuration
 public class Test implements BeanDefinitionRegistryPostProcessor {
+
     @Override
     public void postProcessBeanFactory(ConfigurableListableBeanFactory arg0) throws BeansException {
 
     }
 
     /**
-     * 先执行postProcessBeanDefinitionRegistry方法
-     * 在执行postProcessBeanFactory方法
+     * 先执行postProcessBeanDefinitionRegistry方法 在执行postProcessBeanFactory方法
      */
     @Override
-    public void postProcessBeanDefinitionRegistry(BeanDefinitionRegistry registry) throws BeansException {
+    public void postProcessBeanDefinitionRegistry(BeanDefinitionRegistry registry)
+            throws BeansException {
         ClassPathBeanDefinitionScanner scanner = new
                 ClassPathBeanDefinitionScanner(registry);
         // bean 的名字生成规则在AnnotationBeanNameGenerator

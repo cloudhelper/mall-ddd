@@ -2,8 +2,8 @@ package org.cloudhelper.admin.infrastructure.config;
 
 import org.cloudhelper.admin.domain.event.XxxHasDeleteEventSource;
 import org.cloudhelper.admin.infrastructure.util.event.EventHandler;
-import org.cloudhelper.admin.infrastructure.util.event.anotation.EventSourceType;
 import org.cloudhelper.admin.infrastructure.util.event.EventObject;
+import org.cloudhelper.admin.infrastructure.util.event.anotation.EventSourceType;
 import org.springframework.stereotype.Component;
 
 /**

@@ -21,6 +21,10 @@ public class EventContext implements ApplicationContextAware {
 
     private static Map<Class, List<EventHandler>> eventHandlerMap = new HashMap<>();
 
+    public static List<EventHandler> getEventHandlers(Class eventSourceType) {
+        return eventHandlerMap.get(eventSourceType);
+    }
+
     @Override
     public void setApplicationContext(ApplicationContext applicationContext) throws BeansException {
         context = applicationContext;
@@ -39,10 +43,6 @@ public class EventContext implements ApplicationContextAware {
             eventHandlers.add((EventHandler) item);
         });
         System.out.println(eventHandlerMap);
-    }
-
-    public static List<EventHandler> getEventHandlers(Class eventSourceType) {
-        return eventHandlerMap.get(eventSourceType);
     }
 
 }
