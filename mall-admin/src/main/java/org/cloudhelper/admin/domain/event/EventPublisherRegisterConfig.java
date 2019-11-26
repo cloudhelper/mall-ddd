@@ -22,14 +22,14 @@ public class EventPublisherRegisterConfig {
 
     @Bean(name = "xxxHasDeleteEventPublisher")
     public EventPublisher<XxxHasDeleteEventSource> newXxxEventPublisher() {
-        EventPublisher<XxxHasDeleteEventSource> publisher = new EventPublisher<>();
+        EventPublisher publisher = new EventPublisher<>(XxxHasDeleteEventSource.class);
         publisher.addEventHandler(xxxHasSendEventHandler);
         return publisher;
     }
 
     @Bean(name = "dddPublisher")
     public EventPublisher<DddEventSource> newDddPublisher() {
-        EventPublisher<DddEventSource> publisher = new EventPublisher<>();
+        EventPublisher<DddEventSource> publisher = new EventPublisher<>(DddEventSource.class);
         publisher.addEventHandler(dddHandler);
         return publisher;
     }

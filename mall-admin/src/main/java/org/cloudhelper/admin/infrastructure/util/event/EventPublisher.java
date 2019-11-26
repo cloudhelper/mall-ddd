@@ -13,7 +13,17 @@ public class EventPublisher<T extends EventSource> {
 
     private List<EventHandler<T>> eventHandlers = new LinkedList<>();
 
+    private Class<T> eventSourceType;
+
+    public EventPublisher(Class<T> eventSourceType) {
+        this.eventSourceType = eventSourceType;
+    }
+
     public void publish(EventObject<T> event) {
+        List<EventHandler> eventHandlers = EventContext.getEventHandlers(eventSourceType);
+        if (eventHandlers == null) {
+            return;
+        }
         eventHandlers.forEach(eventHandler -> {
             eventHandler.handle(event);
         });
@@ -22,4 +32,5 @@ public class EventPublisher<T extends EventSource> {
     public void addEventHandler(EventHandler<T> eventHandler) {
         eventHandlers.add(eventHandler);
     }
+
 }

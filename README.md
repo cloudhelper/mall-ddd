@@ -31,6 +31,8 @@ package
   
 DDD与CQRS https://www.jianshu.com/p/Tozpp3
 
+spring SPI https://blog.csdn.net/kongxincai0/article/details/81435528
+
 在DDD架构中，通常会将查询和命令操作分开
 
 
