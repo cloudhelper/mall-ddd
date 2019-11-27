@@ -1,4 +1,4 @@
-package org.cloudhelper.admin.infrastructure.util.event;
+package org.cloudhelper.ddd.helper.domain.event;
 
 /**
  * 事件处理

@@ -1,7 +1,7 @@
 package com.cloudhelper.ddd;
 
 import org.cloudhelper.admin.domain.event.DddEventSource;
-import org.cloudhelper.admin.infrastructure.util.event.EventContext;
+import org.cloudhelper.ddd.helper.domain.event.EventContext;
 import org.junit.Test;
 
 /**
@@ -11,6 +11,8 @@ public class TestEventHandler extends BaseJunit {
 
     @Test
     public void test() {
-        EventContext.publishEvent(new DddEventSource());
+        DddEventSource eventSource = new DddEventSource();
+        eventSource.setId("1");
+        EventContext.publishEvent(eventSource);
     }
 }

@@ -111,6 +111,7 @@
     <module>mall-admin</module>
     <module>mall-common</module>
     <module>mall</module>
+    <module>ddd-helper</module>
   </modules>
 
   <packaging>pom</packaging>

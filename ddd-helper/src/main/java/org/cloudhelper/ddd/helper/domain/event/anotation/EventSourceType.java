@@ -1,4 +1,4 @@
-package org.cloudhelper.admin.infrastructure.util.event.anotation;
+package org.cloudhelper.ddd.helper.domain.event.anotation;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
