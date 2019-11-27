@@ -15,6 +15,6 @@ public class DddEventHandler implements EventHandler<DddEventSource> {
 
     @Override
     public void handle(EventObject<DddEventSource> event) {
-        System.out.println(event.getSource() + ", " + event.getTimestamp() );
+        System.out.println(event.getSource() + ", " + event.getTimestamp());
     }
 }

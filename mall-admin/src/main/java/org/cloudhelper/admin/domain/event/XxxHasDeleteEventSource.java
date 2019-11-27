@@ -1,7 +1,7 @@
 package org.cloudhelper.admin.domain.event;
 
 
-import org.cloudhelper.admin.infrastructure.util.event.EventSource;
+import org.cloudhelper.ddd.helper.domain.event.EventSource;
 
 /**
  * 删除事件源

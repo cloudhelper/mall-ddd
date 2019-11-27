@@ -25,6 +25,9 @@ EventContext.publishEvent(eventSource);
 ```
 3 在领域B中监听事件
 ```java
+/**
+* @EventSourceType 定义其他领域的事件类型
+*/
 @Component("dddHandler")
 @EventSourceType(DddEventSource.class)
 public class DddEventHandler implements EventHandler<DddEventSource> {

@@ -5,8 +5,8 @@
   <artifactId>mall-admin</artifactId>
   <dependencies>
     <dependency>
-      <groupId>org.cloudhelper</groupId>
       <artifactId>ddd-helper</artifactId>
+      <groupId>org.cloudhelper</groupId>
       <version>${project.version}</version>
     </dependency>
     <dependency>
